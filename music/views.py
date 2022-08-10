@@ -10,7 +10,7 @@ from .serializers import SongSerializer
 
 
 @api_view(["GET", "POST"])
-def songsList(request):
+def songs_List(request):
 
     if request.method == "GET":
         songs = Music.objects.all()
@@ -25,7 +25,7 @@ def songsList(request):
 
 
 @api_view(["GET", "PUT", "DELETE"])
-def songdetail(request, pk):
+def song_detail(request, pk):
 
     song = get_object_or_404(Music, pk=pk)
     if request.method == "GET":
