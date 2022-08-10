@@ -30,7 +30,8 @@ def song_detail(request, pk):
     song = get_object_or_404(Music, pk=pk)
     if request.method == "GET":
         serializer = SongSerializer(song)
-        return Response(serializer.data)
+        return Response(pk)
+        print(pk)
     elif request.method == "PUT":
         serializer = SongSerializer(song, data=request.data)
         serializer.is_valid(raise_exception=True)
