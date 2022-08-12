@@ -1,4 +1,4 @@
-import './DisplayMusic.css';
+
 
 const DisplayMusic = (props) => {
     return (
@@ -11,7 +11,6 @@ const DisplayMusic = (props) => {
                         <th>Album</th>
                         <th>Release Date</th>
                         <th>Genre</th>
-                        <th>Likes</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -23,7 +22,6 @@ const DisplayMusic = (props) => {
                             <td>{song.album}</td>
                             <td>{song.release_date}</td>
                             <td>{song.genre}</td>
-                            <td>{song.likes}</td>
                         </tr>
                     )
                    })} 
