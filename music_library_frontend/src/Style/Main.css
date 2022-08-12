@@ -1,1 +1,210 @@
- 
+.displayMusic-container {
+    text-align:center;
+    width: 100% ;
+    color:limegreen;
+}
+
+.music-table, th, td {
+    border: 1px solid;
+    padding: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: clear;
+    
+}
+
+.new-song-section {
+    margin-top: 5%;
+}
+
+.new-song {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: limegreen;
+}
+.container-form {
+    display: flex;
+    position: relative;
+    flex-direction: initial;
+}
+
+.container-form label {
+    color:lightskyblue;
+}
+
+.addnewsong-button{
+    color: lightpink;
+}
+
+
+.title{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(85, 156, 250);
+}
+.container-search {
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.container-search button {
+    color: clear;
+    line-height: 13px; padding: 5px;
+    border-radius: 8px;
+    font-family: "Lucida Console", Monaco, monospace; 
+    font-weight: normal; text-decoration: none; 
+    font-style: normal; 
+    font-variant: normal;
+     text-transform: none;
+     box-shadow: limegreen 5px 5px 15px 5px; 
+    
+}
+
+
+/* DisplayPost Styles */
+.display-post-form {
+    width: 90%;
+    margin: auto;
+    margin: 2rem;
+    background-color: clear;
+    border-radius: 50px;
+    box-shadow: 6px 14px 16px rgb(250, 45, 199);
+}
+
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    color: cyan;
+    margin-left: 3rem;
+    padding-left: 3rem;
+    box-shadow: 6px 6px 6px 0 black, 0 17px 10px 0 rgba(250, 6, 197); 
+}
+
+.post-entries {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+.text-field {
+   width: 90%;
+}
+.name-text {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: small;
+    margin: 1rem;
+}
+/* Post Styles */
+button {
+    color: rgb(9, 248, 45);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: underline;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 25%;
+}
+
+button:hover {
+    box-shadow: 0 12px 16px 0 black, 0 17px 10px 0 rgba(250, 6, 197);
+}
+
+
+/* CreatePost Styles */
+.create-post {
+    width: 40vw;
+    margin: auto;
+    margin-top: 1rem;
+    background-color:clear;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid rgb(127, 255, 180);
+    box-shadow: 10px 8px 16 px rgb(255, 150, 213);
+    justify-content: space-between;
+}
+
+/* Buttons Styles */
+button{
+    color: deepskyblue;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14;
+    margin-left: 2em;
+}
+
+button:hover {
+    box-shadow: deepskyblue;
+}
+
+.customButtons{
+    display: flex;
+    align-items: center;
+
+}
+
+p#Post{
+    color:limegreen
+}
+
+p#name{
+    color:lightpink
+}
+
+button{
+    background-color: black;
+    background: fixed;
+    background: clear;
+}
+
+input{
+    color: blueviolet;
+}
+
+form{
+    color: skyblue;
+}
+
+/* AddEntryform Style */
+.form-grid{
+    display: grid;
+}
+
+div.middle-container{
+    background-color: clear;
+    display:grid;
+}
+
+textarea{
+    margin: 1rem;
+    display: flex;
+}
+
+h3.new-song{
+    margin-left: 15rem;
+    color: #559CFA;
+}
+
+button.btn.btn-primary{
+    color: limegreen;
+    background: black;
+    box-shadow: 0 12px 16px 0 black, 0 17px 10px 0 rgba(250, 6, 197); 
+}
+
+
+h3.title{
+    margin-left: 15rem;
+}
+
+div.container-search{
+    margin-bottom: 2rem;
+}
+
+input{
+    margin: 1rem;
+    background-color: #32CD32;
+}
+
+
+
+form{
+    background-color: clear;
+}

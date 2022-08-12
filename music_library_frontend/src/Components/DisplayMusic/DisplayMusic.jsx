@@ -1,4 +1,4 @@
-
+import React, { useState } from 'react';
 
 const DisplayMusic = (props) => {
     return (
@@ -11,6 +11,8 @@ const DisplayMusic = (props) => {
                         <th>Album</th>
                         <th>Release Date</th>
                         <th>Genre</th>
+                        <th className="text-center"scope="col">Delete</th>
+                        <th className="text-center"scope="col">Update</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -22,6 +24,8 @@ const DisplayMusic = (props) => {
                             <td>{song.album}</td>
                             <td>{song.release_date}</td>
                             <td>{song.genre}</td>
+                            <td className="text-center"><button type="button" className="btn btn-primary" onClick={()=> props.deleteSong(song.id)}>Delete</button></td>
+                            <td className="text-center"><button type="button" className="btn btn-primary" onClick={()=> props.deleteSong(song.id)}>Update</button></td>
                         </tr>
                     )
                    })} 
