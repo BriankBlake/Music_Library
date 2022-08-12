@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import axios from 'axios';
 
 const CreateSong = (props) => {
 
@@ -8,7 +8,7 @@ const CreateSong = (props) => {
     const [newAlbum, setAlbum] = useState('');
     const [newReleaseDate, setReleaseDate] = useState('');
     const [newGenre, setGenre] = useState('');
-    const [newLikes, setLikes] = useState('');
+    
 
     function handleSubmit(event){
         event.preventDefault();
@@ -18,7 +18,7 @@ const CreateSong = (props) => {
             "album": newAlbum,
             "release_date": newReleaseDate,
             "genre": newGenre,
-            "likes": newLikes,
+            
 
         }
 
@@ -29,14 +29,14 @@ const CreateSong = (props) => {
         setAlbum("");
         setReleaseDate("");
         setGenre("");
-        setLikes("");
+       
         
     }
 
 
     return (
         <div className='new-song-section'>
-            <h3 className='new-song'>New Song</h3>
+            <h3 className='new-song'>Create New Search</h3>
             <div className='new-song-container'>
                 <form onSubmit={handleSubmit}>
                     <div className='container-form'>
@@ -59,7 +59,11 @@ const CreateSong = (props) => {
                         <div>
                             <label className='label-form'>Genre:</label>
                             <input type = 'text' placeholder='Genre' value={newGenre} onChange={(event) => setGenre(event.target.value)}/>
-                        </div>   
+                        </div>
+                        <div>
+                            
+                            <button type='submit' className='addnewsong-button'>Create Song</button>
+                        </div>
                     </div>
                     <div className='newsong-button'>
                         <div>
